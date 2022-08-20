@@ -1,0 +1,33 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/layout.scss" as *;
+
+.button {
+  background-color: $brainFlix-blue;
+  border-color: $brainFlix-blue;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  
+  
+
+  @include tablet {
+  min-width: 9.375rem;
+  padding: 2rem 0;
+}
+
+  & p {
+    color: $white;
+    @include labels-buttons;
+    margin:0;
+    text-align: center;
+  }
+  & img{
+    height: 1.25rem;
+    float:left;
+  }
+  &:hover{
+    background-color: $brainFlix-darkBlue;
+    border-color: $brainFlix-darkBlue;
+  }
+}
