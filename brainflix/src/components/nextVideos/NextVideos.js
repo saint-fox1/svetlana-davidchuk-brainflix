@@ -1,10 +1,22 @@
-import "./todo.scss";
+import "./NextVideos.scss";
+import VideoWithDescription from "../videoWithDescription/VideoWithDescription.js";
 
-function TODO() {
+function NextVideos(props) {
+
+    const nextVideos = props.nextVideos;
+
   return (
-  <div></div>
-  
+    <div>
+      
+      <div>
+      {nextVideos.map((nextVideo, index) => {
+        return (
+            <VideoWithDescription key={`video-${index}`} nextVideo={nextVideo}/>
+        );
+      })}
+    </div>
+    </div>
   );
 }
 
-export default TODO;
+export default NextVideos;

@@ -3,24 +3,92 @@
 @use "../../styles/partials/layout.scss" as *;
 
 .header {
-  margin: 0 $side-margin-mobile;
+  margin: 1rem $side-margin-mobile;
 
   &__website-logo {
     display: flex;
     justify-content: center;
     max-height: 1.5625rem;
     max-width: 7.5rem;
-    margin: auto;
+    margin: 1rem auto;
+
+    @include tablet {
+      margin-left: 0;
+    }
+  }
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem $side-margin-tablet;
+  }
+  @include desktop {
+    @include container-desktop;
+    margin-top: 1rem;
+  }
+
+  #search-input {
+    background-image: url("../../assets/Icons/search.svg");
+    background-repeat: no-repeat;
+    background-position: 6px 10px;
+    background-color: $alabaster;
+    height: 2.25rem;
+    flex-grow: 1;
+    padding: 12px 12px 12px 30px;
+    border-radius: 4px;
+    border: 1px solid $mercury;
+    margin-right: 1rem;
+    min-height: 36px;
+    max-width: 100%;
+    border-radius: 4px;
+    border: 1px solid $mercury;
+
+    &:active {
+      border: 1px solid $brainFlix-blue;
+    }
+    &:invalid {
+      border-color: $error;
+    }
+
+    @include tablet {
+      flex-grow: 0;
+      min-height: 40px;
+      min-width: 240px;
+      padding: 16px 16px 16px 30px;
+      margin-right: $padding-between-components;
+    }
+  }
+
+  #search-form {
+    display: flex;
+    flex-wrap: wrap;
+    > :nth-child(2) {
+      //image tag
+      order: 3;
+      margin-left: $padding-between-components;
+    }
+    @include tablet {
+      flex-wrap: nowrap;
+    }
   }
 }
 
-#search-input{
-background-image: url("../../assets/Icons/search.svg");
-background-repeat: no-repeat;
-background-position: 6px 10px;
-background-color: $alabaster;
-height: 2.25rem;
-padding-left:30px;
-border-radius: 4px;
-border: 1px solid $mercury;
-}
+// .form {
+//   min-height: 36px;
+//   max-width: 100%;
+//   border-radius: 4px;
+//   border: 1px solid $mercury;
+//   padding: 12px;
+
+//   &:active {
+//     border: 1px solid $brainFlix-blue;
+//   }
+//   &:invalid {
+//     border-color: $error;
+//   }
+
+//   @include tablet {
+//     min-height: 40px;
+//     min-width: 240px;
+//     padding: 16px;
+//   }
+// }

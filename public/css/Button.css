@@ -11,16 +11,18 @@
   font-style: normal;
 }
 .button {
-  background-color: #0095FF;
-  border-color: #0095FF;
+  background-color: #0095ff;
+  border-color: #0095ff;
   height: 2.5rem;
   width: 100%;
   border-radius: 0.25rem;
+  margin: 1rem 0;
 }
 @media (min-width: 48rem) {
   .button {
     min-width: 9.375rem;
-    padding: 2rem 0;
+    padding: 0 2rem;
+    margin: 0;
   }
 }
 .button p {
@@ -36,6 +38,6 @@
   float: left;
 }
 .button:hover {
-  background-color: #0065AD;
-  border-color: #0065AD;
+  background-color: #0065ad;
+  border-color: #0065ad;
 }

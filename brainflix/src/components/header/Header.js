@@ -10,13 +10,10 @@ function Header() {
     <header className="header">
       <img className='header__website-logo' src={websiteLogo} alt="website-logo" />
       <form id="search-form">
-        <label for="search-input"></label>
         <input id="search-input" type="text" placeholder="Search" />
+        <ArtistImage/>
+        <Button name='UPLOAD' image={uploadIcon}/>
       </form>
-     
-      <ArtistImage/>
-      <Button name='UPLOAD' image={uploadIcon}/>
-
     </header>
   );
 }
