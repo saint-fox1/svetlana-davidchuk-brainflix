@@ -1,4 +1,6 @@
+import Button from "../button/Button.js";
 import "./Comments.scss";
+import addCommentIcon from "../../assets/Icons/add_comment.svg";
 
 function Comments(props) {
   const comments = props.currentVideo.comments;
@@ -51,26 +53,13 @@ function Comments(props) {
   return (
     <section className="comments-section">
       <div className="comments-section__wrapper">
-        <h2 className="comments-section__title">Join the Conversation</h2>
+        <h3 className="comments-section__title">3 Comments</h3>
         <div className="comments-section__form-wrapper">
           <div className="comments-section__img--static comments-section__img"></div>
           <form id="comment-form">
-            <label for="name-input" className="comments-section__label">
-              NAME
-            </label>
-            <br />
-            <input
-              id="name-input"
-              className="comments-section__input-field"
-              type="text"
-              name="fullName"
-              placeholder="Enter your name"
-            />
-            <br />
             <label for="comment-input" className="comments-section__label">
-              COMMENT
+              JOIN THE CONVERSATION
             </label>
-            <br />
             <textarea
               id="comment-input"
               className="comments-section__input-field"
@@ -78,11 +67,8 @@ function Comments(props) {
               name="comment"
               placeholder="Add a new comment"
             ></textarea>
-            <br />
-            <button type="submit" className="button comments-section__button">
-              COMMENT
-            </button>
           </form>
+          <Button name="COMMENT" image={addCommentIcon} />
         </div>
 
         {/* Added Comments */}
@@ -94,7 +80,10 @@ function Comments(props) {
 
       {comments.map((currentComment, index) => {
         return (
-          <div key={`comment-${index}`} className="comments-section__added-comment-wrapper">
+          <div
+            key={`comment-${index}`}
+            className="comments-section__added-comment-wrapper"
+          >
             <div className="comments-section__img"></div>
             <div className="comments-section__added-comment-text-wrapper">
               <div className="comments-section__comment-name-and-date-wrapper">

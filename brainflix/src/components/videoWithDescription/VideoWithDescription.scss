@@ -2,7 +2,7 @@
 @use "../../styles/partials/fonts.scss" as *;
 @use "../../styles/partials/layout.scss" as *;
 
-.comments-section {
+.video-section {
   background-color: $white;
 
   &__form-wrapper {
@@ -99,7 +99,7 @@
     font-size: 0.75rem;
     letter-spacing: 0.5px;
   }
-  &__added-comments {
+  &__added-video {
     @include tablet {
       width: 85%;
       margin: auto;
@@ -135,18 +135,4 @@
   &__text-of-comment {
     @include body-copy;
   }
-}
-
-#comment-form {
-  width: 100%;
-}
-
-#name-input {
-  margin-bottom: 1.5rem;
-}
-
-#comment-input {
-  height: 6.25rem;
-  resize: none;
-  margin-bottom: 1rem;
 }

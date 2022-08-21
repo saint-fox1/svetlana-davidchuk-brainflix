@@ -3,7 +3,7 @@
 @use "../../styles/partials/layout.scss" as *;
 
 .header {
-  margin: 1rem $side-margin-mobile;
+  margin: 1rem $side-margin-mobile 0 $side-margin-mobile;
 
   &__website-logo {
     display: flex;
@@ -24,6 +24,7 @@
   @include desktop {
     @include container-desktop;
     margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   #search-input {
@@ -40,10 +41,10 @@
     min-height: 36px;
     max-width: 100%;
     border-radius: 4px;
-    border: 1px solid $mercury;
+    border: 2px solid $mercury;
 
-    &:active {
-      border: 1px solid $brainFlix-blue;
+    &:hover {
+      border-color: $brainFlix-blue;
     }
     &:invalid {
       border-color: $error;
@@ -54,20 +55,22 @@
       min-height: 40px;
       min-width: 240px;
       padding: 16px 16px 16px 30px;
-      margin-right: $padding-between-components;
+      margin-right: $padding-between-components-tablet;
     }
   }
 
   #search-form {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
-    > :nth-child(2) {
-      //image tag
-      order: 3;
-      margin-left: $padding-between-components;
-    }
+
     @include tablet {
       flex-wrap: nowrap;
+      > :nth-child(2) {
+        //image tag
+        order: 3;
+        margin-left: $padding-between-components-tablet;
+      }
     }
   }
 }

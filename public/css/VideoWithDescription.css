@@ -10,10 +10,10 @@
   font-weight: 700;
   font-style: normal;
 }
-.comments-section {
+.video-section {
   background-color: #ffffff;
 }
-.comments-section__form-wrapper {
+.video-section__form-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,34 +23,34 @@
   margin-bottom: 1rem;
 }
 @media (min-width: 48rem) {
-  .comments-section__form-wrapper {
+  .video-section__form-wrapper {
     width: 85%;
     margin: auto;
   }
 }
 @media (min-width: 80rem) {
-  .comments-section__form-wrapper {
+  .video-section__form-wrapper {
     max-width: 36.0625rem;
     margin: auto;
   }
 }
-.comments-section__wrapper {
+.video-section__wrapper {
   padding: 1.5rem 1rem 0 1rem;
   max-width: 72.125rem;
   margin: auto;
 }
 @media (min-width: 48rem) {
-  .comments-section__wrapper {
+  .video-section__wrapper {
     padding: 3rem 2.25rem 1rem 2.25rem;
   }
 }
 @media (min-width: 80rem) {
-  .comments-section__wrapper {
+  .video-section__wrapper {
     padding-left: 0;
     padding-right: 0;
   }
 }
-.comments-section__title {
+.video-section__title {
   font-size: 0.75rem;
   line-height: 1.25rem;
   font-weight: 700;
@@ -58,11 +58,11 @@
   font-weight: 400;
 }
 @media (min-width: 48rem) {
-  .comments-section__title {
+  .video-section__title {
     padding-bottom: 1.5rem;
   }
 }
-.comments-section__img {
+.video-section__img {
   background-color: #e1e1e1;
   border-radius: 50%;
   min-width: 2.25rem;
@@ -72,20 +72,20 @@
   margin-right: 1rem;
 }
 @media (min-width: 48rem) {
-  .comments-section__img {
+  .video-section__img {
     min-width: 3rem;
     min-height: 3rem;
     width: 3rem;
     height: 3rem;
   }
 }
-.comments-section__img--static {
+.video-section__img--static {
   background-image: url("../../assets/Images/Mohan-muruge.jpg");
   background-size: cover;
   background-position: center;
   margin-top: 1.5rem;
 }
-.comments-section__input-field {
+.video-section__input-field {
   background-color: #fafafa;
   min-height: 2.25rem;
   width: 100%;
@@ -97,33 +97,33 @@
   font-family: "Avenir Next";
 }
 @media (min-width: 48rem) {
-  .comments-section__input-field {
+  .video-section__input-field {
     min-height: 3rem;
     padding: 1rem;
   }
 }
-.comments-section__input-field::-webkit-input-placeholder {
+.video-section__input-field::-webkit-input-placeholder {
   color: #0095ff;
 }
-.comments-section__input-field::-moz-placeholder {
+.video-section__input-field::-moz-placeholder {
   color: #0095ff;
 }
-.comments-section__input-field:-ms-input-placeholder {
+.video-section__input-field:-ms-input-placeholder {
   color: #0095ff;
 }
-.comments-section__input-field::-ms-input-placeholder {
+.video-section__input-field::-ms-input-placeholder {
   color: #0095ff;
 }
-.comments-section__input-field::placeholder {
+.video-section__input-field::placeholder {
   color: #0095ff;
 }
-.comments-section__input-field:hover {
+.video-section__input-field:hover {
   border-color: #0095ff;
 }
-.comments-section__input-field:invalid {
+.video-section__input-field:invalid {
   border-color: #d22d2d;
 }
-.comments-section__label {
+.video-section__label {
   color: #afafaf;
   font-size: 0.75rem;
   line-height: 1.25rem;
@@ -134,26 +134,26 @@
   letter-spacing: 0.5px;
 }
 @media (min-width: 48rem) {
-  .comments-section__added-comments {
+  .video-section__added-video {
     width: 85%;
     margin: auto;
   }
 }
 @media (min-width: 80rem) {
-  .comments-section__added-comments {
+  .video-section__added-video {
     max-width: 36.0625rem;
     margin: auto;
   }
 }
-.comments-section__added-comment-wrapper {
+.video-section__added-comment-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.comments-section__added-comment-text-wrapper {
+.video-section__added-comment-text-wrapper {
   width: 100%;
 }
-.comments-section__comment-name-and-date-wrapper {
+.video-section__comment-name-and-date-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,36 +162,22 @@
           justify-content: space-between;
   margin-bottom: 1rem;
 }
-.comments-section__name-of-comment {
+.video-section__name-of-comment {
   display: inline-block;
   font-weight: 400;
 }
-.comments-section__date-of-comment {
+.video-section__date-of-comment {
   display: inline-block;
   color: #afafaf;
 }
-.comments-section__text-of-comment {
+.video-section__text-of-comment {
   font-size: 0.8125rem;
   line-height: 1.125rem;
   font-weight: 400;
 }
 @media (min-width: 48rem) {
-  .comments-section__text-of-comment {
+  .video-section__text-of-comment {
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
-}
-
-#comment-form {
-  width: 100%;
-}
-
-#name-input {
-  margin-bottom: 1.5rem;
-}
-
-#comment-input {
-  height: 6.25rem;
-  resize: none;
-  margin-bottom: 1rem;
 }

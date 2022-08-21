@@ -12,6 +12,12 @@
 }
 .comments-section {
   background-color: #ffffff;
+  margin: 0 1rem;
+}
+@media (min-width: 48rem) {
+  .comments-section {
+    margin: 0 2.25rem;
+  }
 }
 .comments-section__form-wrapper {
   display: -webkit-box;
@@ -20,12 +26,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 1rem;
 }
 @media (min-width: 48rem) {
   .comments-section__form-wrapper {
-    width: 85%;
-    margin: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 @media (min-width: 80rem) {
@@ -34,33 +43,23 @@
     margin: auto;
   }
 }
-.comments-section__wrapper {
-  padding: 1.5rem 1rem 0 1rem;
-  max-width: 72.125rem;
-  margin: auto;
-}
 @media (min-width: 48rem) {
   .comments-section__wrapper {
-    padding: 3rem 2.25rem 1rem 2.25rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #e1e1e1;
   }
 }
 @media (min-width: 80rem) {
   .comments-section__wrapper {
+    max-width: 72.125rem;
+    margin: auto;
     padding-left: 0;
     padding-right: 0;
   }
 }
 .comments-section__title {
-  font-size: 0.75rem;
-  line-height: 1.25rem;
   font-weight: 700;
-  padding-bottom: 1rem;
-  font-weight: 400;
-}
-@media (min-width: 48rem) {
-  .comments-section__title {
-    padding-bottom: 1.5rem;
-  }
+  margin-bottom: 1rem;
 }
 .comments-section__img {
   background-color: #e1e1e1;
@@ -75,47 +74,52 @@
   .comments-section__img {
     min-width: 3rem;
     min-height: 3rem;
-    width: 3rem;
-    height: 3rem;
   }
 }
 .comments-section__img--static {
   background-image: url("../../assets/Images/Mohan-muruge.jpg");
   background-size: cover;
   background-position: center;
-  margin-top: 1.5rem;
 }
 .comments-section__input-field {
   background-color: #fafafa;
   min-height: 2.25rem;
+  height: 6.25rem;
+  resize: none;
   width: 100%;
-  border-radius: 4px;
-  border: 1px solid #e1e1e1;
   padding: 0.75rem;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 2px solid #e1e1e1;
   font-size: 1rem;
   color: #323232;
   font-family: "Avenir Next";
+  font-size: 0.9rem;
+  line-height: 0.9rem;
 }
 @media (min-width: 48rem) {
   .comments-section__input-field {
-    min-height: 3rem;
-    padding: 1rem;
+    padding: 0.75rem 0 0 0.75rem;
+    min-height: 2.5rem;
+    min-width: 240px;
+    height: 2.5rem;
+    margin-bottom: -4px;
   }
 }
 .comments-section__input-field::-webkit-input-placeholder {
-  color: #0095ff;
+  color: #323232;
 }
 .comments-section__input-field::-moz-placeholder {
-  color: #0095ff;
+  color: #323232;
 }
 .comments-section__input-field:-ms-input-placeholder {
-  color: #0095ff;
+  color: #323232;
 }
 .comments-section__input-field::-ms-input-placeholder {
-  color: #0095ff;
+  color: #323232;
 }
 .comments-section__input-field::placeholder {
-  color: #0095ff;
+  color: #323232;
 }
 .comments-section__input-field:hover {
   border-color: #0095ff;
@@ -125,13 +129,7 @@
 }
 .comments-section__label {
   color: #afafaf;
-  font-size: 0.75rem;
-  line-height: 1.25rem;
   font-weight: 700;
-  font-weight: 400;
-  margin-bottom: 0.25rem;
-  font-size: 0.75rem;
-  letter-spacing: 0.5px;
 }
 @media (min-width: 48rem) {
   .comments-section__added-comments {
@@ -149,6 +147,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 1rem;
+  border-bottom: 2px solid #e1e1e1;
+}
+@media (min-width: 48rem) {
+  .comments-section__added-comment-wrapper {
+    margin-top: 1.5rem;
+  }
 }
 .comments-section__added-comment-text-wrapper {
   width: 100%;
@@ -164,34 +169,20 @@
 }
 .comments-section__name-of-comment {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 700;
+  margin: 0;
 }
 .comments-section__date-of-comment {
   display: inline-block;
   color: #afafaf;
-}
-.comments-section__text-of-comment {
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
-  font-weight: 400;
-}
-@media (min-width: 48rem) {
-  .comments-section__text-of-comment {
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-  }
+  margin: 0;
 }
 
 #comment-form {
   width: 100%;
 }
-
-#name-input {
-  margin-bottom: 1.5rem;
-}
-
-#comment-input {
-  height: 6.25rem;
-  resize: none;
-  margin-bottom: 1rem;
+@media (min-width: 48rem) {
+  #comment-form {
+    margin-right: 1.5rem;
+  }
 }

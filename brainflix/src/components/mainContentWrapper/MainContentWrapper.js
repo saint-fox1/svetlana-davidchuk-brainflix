@@ -10,7 +10,10 @@ function MainContentWrapper(props) {
         <CurrentVideoDescription currentVideo={props.currentVideo} />
         <Comments currentVideo={props.currentVideo} />
       </div>
-      <NextVideos nextVideos={props.nextVideos} />
+      <NextVideos
+        nextVideos={props.nextVideos}
+        onVideoClick={props.setcurrentVideoId}
+      />
     </div>
   );
 }

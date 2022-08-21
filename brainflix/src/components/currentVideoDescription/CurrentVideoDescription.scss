@@ -1,0 +1,61 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/layout.scss" as *;
+
+.current-video-description {
+  &__wrapper {
+    margin: $padding-between-components-mobile $side-margin-mobile;
+
+    @include tablet {
+      margin: $padding-between-components-tablet $side-margin-tablet;
+    }
+  }
+  &__title {
+    margin: 0;
+    padding-bottom: $padding-after-headlines-mobile;
+    border-bottom: 2px solid $mercury;
+
+    @include tablet {
+      padding-bottom: $padding-after-headlines-tablet;
+    }
+  }
+  &__stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $padding-between-components-mobile 0;
+    border-bottom: 2px solid $mercury;
+
+    &-portion {
+      padding-right: 56px;
+
+      @include tablet {
+        padding-right: 0;
+      }
+    }
+
+    &-component {
+      padding: 8px 0;
+      margin: 0;
+
+      &--padding-right {
+        @include tablet {
+          padding-right: 24px;
+        }
+      }
+      @include tablet {
+        display: inline-block;
+      }
+      &-logo {
+        padding-right: 8px;
+      }
+
+      &--silver {
+        color: $silver;
+      }
+    }
+  }
+  &__description-text {
+    padding: $padding-between-components-mobile 0;
+  }
+}
