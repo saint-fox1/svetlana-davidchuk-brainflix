@@ -9,6 +9,9 @@
   @include tablet {
     margin: 0 $side-margin-tablet;
   }
+  @include desktop {
+    margin: 0;
+  }
 
   &__form-wrapper {
     display: flex;
@@ -122,6 +125,9 @@
     @include tablet {
       margin-top: $padding-between-components-tablet;
     }
+    @include tablet {
+      margin-right: $padding-between-components-tablet;
+    }
   }
 
   &__added-comment-text-wrapper {
@@ -159,5 +165,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+  }
+  @include desktop {
+    margin-right: $padding-between-components-tablet;
   }
 }

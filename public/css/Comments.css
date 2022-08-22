@@ -19,6 +19,11 @@
     margin: 0 2.25rem;
   }
 }
+@media (min-width: 80rem) {
+  .comments-section {
+    margin: 0;
+  }
+}
 .comments-section__form-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,6 +165,11 @@
     margin-top: 1.5rem;
   }
 }
+@media (min-width: 48rem) {
+  .comments-section__added-comment-wrapper {
+    margin-right: 1.5rem;
+  }
+}
 .comments-section__added-comment-text-wrapper {
   width: 100%;
 }
@@ -203,5 +213,10 @@
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+  }
+}
+@media (min-width: 80rem) {
+  #comment-form {
+    margin-right: 1.5rem;
   }
 }
