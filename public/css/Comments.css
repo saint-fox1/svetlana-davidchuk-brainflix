@@ -29,9 +29,9 @@
 }
 @media (min-width: 48rem) {
   .comments-section__form-wrapper {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
@@ -43,10 +43,12 @@
     margin: auto;
   }
 }
+.comments-section__wrapper {
+  border-bottom: 2px solid #e1e1e1;
+}
 @media (min-width: 48rem) {
   .comments-section__wrapper {
     padding-bottom: 1.5rem;
-    border-bottom: 2px solid #e1e1e1;
   }
 }
 @media (min-width: 80rem) {
@@ -80,6 +82,12 @@
   background-image: url("../../assets/Images/Mohan-muruge.jpg");
   background-size: cover;
   background-position: center;
+  margin-top: 1.5rem;
+}
+@media (min-width: 48rem) {
+  .comments-section__img--static {
+    margin-top: 0;
+  }
 }
 .comments-section__input-field {
   background-color: #fafafa;
@@ -94,8 +102,7 @@
   font-size: 1rem;
   color: #323232;
   font-family: "Avenir Next";
-  font-size: 0.9rem;
-  line-height: 0.9rem;
+  font-size: 0.95rem;
 }
 @media (min-width: 48rem) {
   .comments-section__input-field {
@@ -126,6 +133,12 @@
 }
 .comments-section__input-field:invalid {
   border-color: #d22d2d;
+}
+@media (min-width: 48rem) {
+  .comments-section__label-input-wrapper {
+    width: 100%;
+    margin-right: 1.5rem;
+  }
 }
 .comments-section__label {
   color: #afafaf;
@@ -177,12 +190,26 @@
   color: #afafaf;
   margin: 0;
 }
-
-#comment-form {
-  width: 100%;
+.comments-section__text-of-comment {
+  margin-bottom: 1rem;
 }
 @media (min-width: 48rem) {
+  .comments-section__text-of-comment {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 48rem) {
   #comment-form {
-    margin-right: 1.5rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }

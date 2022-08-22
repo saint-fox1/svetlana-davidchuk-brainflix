@@ -10,174 +10,66 @@
   font-weight: 700;
   font-style: normal;
 }
-.video-section {
+.video-with-description {
   background-color: #ffffff;
-}
-.video-section__form-wrapper {
+  margin: 1rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 1rem;
+  cursor: pointer;
 }
 @media (min-width: 48rem) {
-  .video-section__form-wrapper {
-    width: 85%;
-    margin: auto;
+  .video-with-description {
+    margin: 1.5rem 2.25rem;
   }
 }
-@media (min-width: 80rem) {
-  .video-section__form-wrapper {
-    max-width: 36.0625rem;
-    margin: auto;
-  }
-}
-.video-section__wrapper {
-  padding: 1.5rem 1rem 0 1rem;
-  max-width: 72.125rem;
-  margin: auto;
-}
-@media (min-width: 48rem) {
-  .video-section__wrapper {
-    padding: 3rem 2.25rem 1rem 2.25rem;
-  }
-}
-@media (min-width: 80rem) {
-  .video-section__wrapper {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-.video-section__title {
-  font-size: 0.75rem;
-  line-height: 1.25rem;
-  font-weight: 700;
-  padding-bottom: 1rem;
-  font-weight: 400;
-}
-@media (min-width: 48rem) {
-  .video-section__title {
-    padding-bottom: 1.5rem;
-  }
-}
-.video-section__img {
-  background-color: #e1e1e1;
-  border-radius: 50%;
-  min-width: 2.25rem;
-  min-height: 2.25rem;
-  width: 2.25rem;
-  height: 2.25rem;
-  margin-right: 1rem;
-}
-@media (min-width: 48rem) {
-  .video-section__img {
-    min-width: 3rem;
-    min-height: 3rem;
-    width: 3rem;
-    height: 3rem;
-  }
-}
-.video-section__img--static {
-  background-image: url("../../assets/Images/Mohan-muruge.jpg");
-  background-size: cover;
-  background-position: center;
-  margin-top: 1.5rem;
-}
-.video-section__input-field {
-  background-color: #fafafa;
-  min-height: 2.25rem;
-  width: 100%;
+.video-with-description__video {
+  min-width: 140px;
+  min-height: 80px;
+  max-width: 140px;
+  max-height: 80px;
   border-radius: 4px;
-  border: 1px solid #e1e1e1;
-  padding: 0.75rem;
-  font-size: 1rem;
-  color: #323232;
-  font-family: "Avenir Next";
+  background-color: #e1e1e1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video-with-description__title {
+  margin-top: 0;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 @media (min-width: 48rem) {
-  .video-section__input-field {
-    min-height: 3rem;
-    padding: 1rem;
+  .video-with-description__title {
+    white-space: unset;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    font-weight: 700;
   }
 }
-.video-section__input-field::-webkit-input-placeholder {
-  color: #0095ff;
-}
-.video-section__input-field::-moz-placeholder {
-  color: #0095ff;
-}
-.video-section__input-field:-ms-input-placeholder {
-  color: #0095ff;
-}
-.video-section__input-field::-ms-input-placeholder {
-  color: #0095ff;
-}
-.video-section__input-field::placeholder {
-  color: #0095ff;
-}
-.video-section__input-field:hover {
-  border-color: #0095ff;
-}
-.video-section__input-field:invalid {
-  border-color: #d22d2d;
-}
-.video-section__label {
-  color: #afafaf;
-  font-size: 0.75rem;
-  line-height: 1.25rem;
-  font-weight: 700;
-  font-weight: 400;
-  margin-bottom: 0.25rem;
-  font-size: 0.75rem;
-  letter-spacing: 0.5px;
-}
-@media (min-width: 48rem) {
-  .video-section__added-video {
-    width: 85%;
-    margin: auto;
-  }
-}
-@media (min-width: 80rem) {
-  .video-section__added-video {
-    max-width: 36.0625rem;
-    margin: auto;
-  }
-}
-.video-section__added-comment-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.video-section__added-comment-text-wrapper {
-  width: 100%;
-}
-.video-section__comment-name-and-date-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 1rem;
-}
-.video-section__name-of-comment {
-  display: inline-block;
-  font-weight: 400;
-}
-.video-section__date-of-comment {
-  display: inline-block;
-  color: #afafaf;
-}
-.video-section__text-of-comment {
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
-  font-weight: 400;
-}
-@media (min-width: 48rem) {
-  .video-section__text-of-comment {
+@media (min-width: 48rem) and (min-width: 48rem) {
+  .video-with-description__title {
     font-size: 0.875rem;
     line-height: 1.375rem;
   }
+}
+.video-with-description__channel {
+  display: block;
+  margin: 0;
+}
+.video-with-description__text-wrapper {
+  margin: 0 1rem;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 156px);
 }

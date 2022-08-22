@@ -15,9 +15,8 @@
     justify-content: center;
 
     @include tablet {
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: flex-end;
-      
     }
 
     @include desktop {
@@ -26,9 +25,9 @@
     }
   }
   &__wrapper {
+    border-bottom: 2px solid $mercury;
     @include tablet {
       padding-bottom: $padding-between-components-tablet;
-      border-bottom: 2px solid $mercury;
     }
     @include desktop {
       @include container-desktop;
@@ -48,7 +47,6 @@
     width: 2.25rem;
     height: 2.25rem;
     margin-right: 1rem;
-    
 
     @include tablet {
       min-width: 3rem;
@@ -59,6 +57,11 @@
       background-image: url("../../assets/Images/Mohan-muruge.jpg");
       background-size: cover;
       background-position: center;
+      margin-top: 1.5rem;
+
+      @include tablet {
+        margin-top: 0;
+      }
     }
   }
 
@@ -73,8 +76,7 @@
     border-radius: 4px;
     border: 2px solid $mercury;
     @include root-font;
-    font-size: 0.9rem;
-    line-height: 0.9rem;
+    font-size: 0.95rem;
 
     @include tablet {
       padding: 0.75rem 0 0 0.75rem;
@@ -93,6 +95,13 @@
     }
     &:invalid {
       border-color: $error;
+    }
+  }
+
+  &__label-input-wrapper {
+    @include tablet {
+      width: 100%;
+      margin-right: $padding-between-components-tablet;
     }
   }
 
@@ -118,9 +127,8 @@
     border-bottom: 2px solid $mercury;
 
     @include tablet {
-        margin-top: $padding-between-components-tablet;
-      }
-
+      margin-top: $padding-between-components-tablet;
+    }
   }
 
   &__added-comment-text-wrapper {
@@ -143,11 +151,20 @@
     color: $silver;
     margin: 0;
   }
+  &__text-of-comment {
+    margin-bottom: $padding-between-components-mobile;
+    @include tablet {
+      margin-bottom: $padding-between-components-tablet;
+    }
+  }
 }
 
 #comment-form {
-  width: 100%;
   @include tablet {
-    margin-right: $padding-between-components-tablet;
+    // margin-right: $padding-between-components-tablet;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 }

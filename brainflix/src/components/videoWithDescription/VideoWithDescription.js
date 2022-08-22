@@ -2,25 +2,16 @@ import "./VideoWithDescription.scss";
 
 function VideoWithDescription(props) {
   return (
-    <div
-      className="video-section__added-comment-wrapper"
-      onClick={props.onClick}
-    >
-      {/* <div className="video-section__img"></div>
-      <div className="video-section__added-comment-text-wrapper">
-        <div className="video-section__comment-name-and-date-wrapper">
-          <p className="video-section__name-of-comment">
-            {props.nextVideo.image}
-          </p>
-          <p className="video-section__date-of-comment">
-            {props.nextVideo.title}
-          </p>
-        </div>
-        <p className="video-section__text-of-comment">
-          {props.nextVideo.channel}
-        </p>
-      </div> */}
-      {props.video.title}
+    <div className="video-with-description" onClick={props.onClick}>
+      <img
+        className="video-with-description__video"
+        src={props.video.image}
+        alt="next-video"
+      />
+      <div className="video-with-description__text-wrapper">
+        <h3 className="video-with-description__title">{props.video.title}</h3>
+        <p className="video-with-description__channel">{props.video.channel}</p>
+      </div>
     </div>
   );
 }

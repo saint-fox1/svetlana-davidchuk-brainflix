@@ -1,0 +1,10 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/layout.scss" as *;
+
+.main-content-wrapper {
+  @include desktop {
+    display: flex;
+    @include container-desktop;
+  }
+}

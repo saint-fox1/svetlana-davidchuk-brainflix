@@ -4,13 +4,12 @@ import VideoWithDescription from "../videoWithDescription/VideoWithDescription.j
 function NextVideos(props) {
   const nextVideos = props.nextVideos;
   const onVideoClick = props.onVideoClick;
-
   if (!onVideoClick) {
     return "fail";
   }
 
   return (
-    <div>
+    <div className='next-videos-section'>
       {nextVideos.map((nextVideo, index) => {
         return (
           <VideoWithDescription
