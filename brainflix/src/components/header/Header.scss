@@ -30,15 +30,15 @@
   #search-input {
     background-image: url("../../assets/Icons/search.svg");
     background-repeat: no-repeat;
-    background-position: 6px 10px;
+    background-position: 0.375rem 0.625rem;
     background-color: $alabaster;
     height: 2.25rem;
     flex-grow: 1;
-    padding: 12px 12px 12px 30px;
+    padding: 0.75rem 0.75rem 0.75rem 1.875rem;
     border-radius: 4px;
     border: 1px solid $mercury;
     margin-right: 1rem;
-    min-height: 36px;
+    min-height: 2.25rem;
     max-width: 100%;
     border-radius: 4px;
     border: 2px solid $mercury;
@@ -52,9 +52,9 @@
 
     @include tablet {
       flex-grow: 0;
-      min-height: 40px;
-      min-width: 240px;
-      padding: 16px 16px 16px 30px;
+      min-height: 2.5rem;
+      min-width: 15rem;
+      padding: 1rem 1rem 1rem 1.875rem;
       margin-right: $padding-between-components-tablet;
     }
   }
@@ -74,24 +74,3 @@
     }
   }
 }
-
-// .form {
-//   min-height: 36px;
-//   max-width: 100%;
-//   border-radius: 4px;
-//   border: 1px solid $mercury;
-//   padding: 12px;
-
-//   &:active {
-//     border: 1px solid $brainFlix-blue;
-//   }
-//   &:invalid {
-//     border-color: $error;
-//   }
-
-//   @include tablet {
-//     min-height: 40px;
-//     min-width: 240px;
-//     padding: 16px;
-//   }
-// }

@@ -12,10 +12,10 @@
     margin: $padding-between-components-tablet $side-margin-tablet;
   }
   &__video {
-    min-width: 140px;
-    min-height: 80px;
-    max-width: 140px;
-    max-height: 80px;
+    min-width: 8.75rem;
+    min-height: 5rem;
+    max-width: 8.75rem;
+    max-height: 5rem;
     border-radius: 4px;
     background-color: $mercury;
     object-fit: cover;
@@ -39,10 +39,10 @@
 
   &__text-wrapper {
     margin: 0 $padding-between-components-mobile;
-    height: 80px;
+    height: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: calc(100% - 156px);
+    width: calc(100% - 9.75rem);
   }
 }

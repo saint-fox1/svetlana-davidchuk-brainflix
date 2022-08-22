@@ -27,7 +27,7 @@
     border-bottom: 2px solid $mercury;
 
     &-portion {
-      padding-right: 56px;
+      padding-right: 3.5rem;
 
       @include tablet {
         padding-right: 0;
@@ -35,19 +35,19 @@
     }
 
     &-component {
-      padding: 8px 0;
+      padding: 0.5rem 0;
       margin: 0;
 
       &--padding-right {
         @include tablet {
-          padding-right: 24px;
+          padding-right: 1.5rem;
         }
       }
       @include tablet {
         display: inline-block;
       }
       &-logo {
-        padding-right: 8px;
+        padding-right: 0.5rem;
       }
 
       &--silver {

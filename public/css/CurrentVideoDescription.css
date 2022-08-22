@@ -42,7 +42,7 @@
   border-bottom: 2px solid #e1e1e1;
 }
 .current-video-description__stats-portion {
-  padding-right: 56px;
+  padding-right: 3.5rem;
 }
 @media (min-width: 48rem) {
   .current-video-description__stats-portion {
@@ -50,12 +50,12 @@
   }
 }
 .current-video-description__stats-component {
-  padding: 8px 0;
+  padding: 0.5rem 0;
   margin: 0;
 }
 @media (min-width: 48rem) {
   .current-video-description__stats-component--padding-right {
-    padding-right: 24px;
+    padding-right: 1.5rem;
   }
 }
 @media (min-width: 48rem) {
@@ -64,7 +64,7 @@
   }
 }
 .current-video-description__stats-component-logo {
-  padding-right: 8px;
+  padding-right: 0.5rem;
 }
 .current-video-description__stats-component--silver {
   color: #afafaf;
