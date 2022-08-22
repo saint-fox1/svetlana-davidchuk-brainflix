@@ -9,6 +9,9 @@
     @include tablet {
       margin: $padding-between-components-tablet $side-margin-tablet;
     }
+    @include desktop {
+      margin: $padding-between-components-tablet 0;
+    }
   }
   &__title {
     margin: 0;
@@ -29,6 +32,9 @@
 
     @include tablet {
       padding-top: 0;
+    }
+    @include desktop {
+      padding-right: $padding-between-components-tablet;
     }
 
     &-portion {
@@ -65,6 +71,9 @@
 
     @include tablet {
       padding: $padding-between-components-tablet 0;
+    }
+    @include desktop {
+      padding-right: $padding-between-components-tablet;
     }
   }
 }
