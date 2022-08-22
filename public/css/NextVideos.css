@@ -18,6 +18,6 @@
 @media (min-width: 80rem) {
   .next-videos-section {
     border-left: 2px solid #e1e1e1;
-    min-width: 400px;
+    min-width: 25rem;
   }
 }

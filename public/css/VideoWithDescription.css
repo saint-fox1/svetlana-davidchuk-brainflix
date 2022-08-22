@@ -24,10 +24,10 @@
   }
 }
 .video-with-description__video {
-  min-width: 140px;
-  min-height: 80px;
-  max-width: 140px;
-  max-height: 80px;
+  min-width: 8.75rem;
+  min-height: 5rem;
+  max-width: 8.75rem;
+  max-height: 5rem;
   border-radius: 4px;
   background-color: #e1e1e1;
   -o-object-fit: cover;
@@ -60,7 +60,7 @@
 }
 .video-with-description__text-wrapper {
   margin: 0 1rem;
-  height: 80px;
+  height: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,5 +71,5 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: calc(100% - 156px);
+  width: calc(100% - 9.75rem);
 }

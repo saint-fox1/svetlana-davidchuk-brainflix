@@ -9,6 +9,9 @@
   @include tablet {
     margin: 0 $side-margin-tablet;
   }
+  @include desktop {
+    margin: 0;
+  }
 
   &__form-wrapper {
     display: flex;
@@ -18,11 +21,6 @@
       justify-content: flex-start;
       align-items: flex-end;
     }
-
-    @include desktop {
-      max-width: ($breakpoint-desktop - $page-margin * 2)/2;
-      margin: auto;
-    }
   }
   &__wrapper {
     border-bottom: 2px solid $mercury;
@@ -31,8 +29,6 @@
     }
     @include desktop {
       @include container-desktop;
-      padding-left: 0;
-      padding-right: 0;
     }
   }
   &__title {
@@ -81,8 +77,8 @@
     @include tablet {
       padding: 0.75rem 0 0 0.75rem;
       min-height: 2.5rem;
-      min-width: 240px;
-      height: 2.5rem;
+      min-width: 15rem;
+      height: 2.6rem;
       margin-bottom: -4px;
     }
 
@@ -129,6 +125,9 @@
     @include tablet {
       margin-top: $padding-between-components-tablet;
     }
+    @include tablet {
+      margin-right: $padding-between-components-tablet;
+    }
   }
 
   &__added-comment-text-wrapper {
@@ -166,5 +165,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+  }
+  @include desktop {
+    margin-right: $padding-between-components-tablet;
   }
 }
