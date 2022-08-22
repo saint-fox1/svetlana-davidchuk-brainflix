@@ -128,7 +128,6 @@
     @include tablet {
       margin-right: 0;
     }
-    
   }
 
   &__added-comment-text-wrapper {
@@ -151,8 +150,8 @@
     color: $silver;
     margin: 0;
     @include desktop {
-        padding-right: $padding-between-components-tablet;
-      }
+      padding-right: $padding-between-components-tablet;
+    }
   }
   &__text-of-comment {
     margin-bottom: $padding-between-components-mobile;
@@ -160,8 +159,8 @@
       margin-bottom: $padding-between-components-tablet;
     }
     @include desktop {
-        padding-right: $padding-between-components-tablet;
-      }
+      padding-right: $padding-between-components-tablet;
+    }
   }
 }
 

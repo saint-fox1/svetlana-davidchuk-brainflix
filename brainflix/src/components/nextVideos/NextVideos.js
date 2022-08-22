@@ -9,8 +9,8 @@ function NextVideos(props) {
   }
 
   return (
-    <div className='next-videos-section'>
-        <h3 className='next-videos-section__title'>NEXT VIDEOS</h3>
+    <div className="next-videos-section">
+      <h3 className="next-videos-section__title">NEXT VIDEOS</h3>
       {nextVideos.map((nextVideo, index) => {
         return (
           <VideoWithDescription
