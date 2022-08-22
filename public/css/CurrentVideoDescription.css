@@ -18,6 +18,11 @@
     margin: 1.5rem 2.25rem;
   }
 }
+@media (min-width: 80rem) {
+  .current-video-description__wrapper {
+    margin: 1.5rem 0;
+  }
+}
 .current-video-description__title {
   margin: 0;
   padding-bottom: 1rem;
@@ -45,6 +50,11 @@
 @media (min-width: 48rem) {
   .current-video-description__stats {
     padding-top: 0;
+  }
+}
+@media (min-width: 80rem) {
+  .current-video-description__stats {
+    padding-right: 1.5rem;
   }
 }
 .current-video-description__stats-portion {
@@ -81,5 +91,10 @@
 @media (min-width: 48rem) {
   .current-video-description__description-text {
     padding: 1.5rem 0;
+  }
+}
+@media (min-width: 80rem) {
+  .current-video-description__description-text {
+    padding-right: 1.5rem;
   }
 }

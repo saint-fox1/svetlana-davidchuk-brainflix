@@ -126,7 +126,7 @@
       margin-top: $padding-between-components-tablet;
     }
     @include tablet {
-      margin-right: $padding-between-components-tablet;
+      margin-right: 0;
     }
   }
 
@@ -149,11 +149,17 @@
     display: inline-block;
     color: $silver;
     margin: 0;
+    @include desktop {
+      padding-right: $padding-between-components-tablet;
+    }
   }
   &__text-of-comment {
     margin-bottom: $padding-between-components-mobile;
     @include tablet {
       margin-bottom: $padding-between-components-tablet;
+    }
+    @include desktop {
+      padding-right: $padding-between-components-tablet;
     }
   }
 }

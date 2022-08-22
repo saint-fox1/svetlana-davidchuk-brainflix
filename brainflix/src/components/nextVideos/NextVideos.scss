@@ -10,4 +10,13 @@
     border-left: 2px solid $mercury;
     min-width: 25rem;
   }
+  &__title {
+    color: $silver;
+    margin: $padding-before-headlines-mobile $side-margin-mobile;
+    font-weight: 600;
+
+    @include tablet {
+      margin: $padding-before-headlines-tablet $side-margin-tablet;
+    }
+  }
 }
