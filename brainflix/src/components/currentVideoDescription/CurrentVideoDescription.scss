@@ -16,7 +16,8 @@
     border-bottom: 2px solid $mercury;
 
     @include tablet {
-      padding-bottom: $padding-after-headlines-tablet;
+      padding-bottom: 0;
+      border: 0;
     }
   }
   &__stats {
@@ -25,6 +26,10 @@
     align-items: center;
     padding: $padding-between-components-mobile 0;
     border-bottom: 2px solid $mercury;
+
+    @include tablet {
+      padding-top: 0;
+    }
 
     &-portion {
       padding-right: 3.5rem;
@@ -57,5 +62,9 @@
   }
   &__description-text {
     padding: $padding-between-components-mobile 0;
+
+    @include tablet {
+      padding: $padding-between-components-tablet 0;
+    }
   }
 }
