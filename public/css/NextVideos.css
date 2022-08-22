@@ -21,3 +21,13 @@
     min-width: 25rem;
   }
 }
+.next-videos-section__title {
+  color: #afafaf;
+  margin: 1.5rem 1rem;
+  font-weight: 600;
+}
+@media (min-width: 48rem) {
+  .next-videos-section__title {
+    margin: 2.25rem 2.25rem;
+  }
+}
