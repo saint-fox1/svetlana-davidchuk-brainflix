@@ -1,0 +1,170 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/layout.scss" as *;
+
+.comments-section {
+  background-color: $white;
+  margin: 0 $side-margin-mobile;
+
+  @include tablet {
+    margin: 0 $side-margin-tablet;
+  }
+
+  &__form-wrapper {
+    display: flex;
+    justify-content: center;
+
+    @include tablet {
+      justify-content: flex-start;
+      align-items: flex-end;
+    }
+
+    @include desktop {
+      max-width: ($breakpoint-desktop - $page-margin * 2)/2;
+      margin: auto;
+    }
+  }
+  &__wrapper {
+    border-bottom: 2px solid $mercury;
+    @include tablet {
+      padding-bottom: $padding-between-components-tablet;
+    }
+    @include desktop {
+      @include container-desktop;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  &__title {
+    font-weight: $font-weight-bold;
+    margin-bottom: $padding-between-components-mobile;
+  }
+  &__img {
+    background-color: $mercury;
+    border-radius: 50%;
+    min-width: 2.25rem;
+    min-height: 2.25rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-right: 1rem;
+
+    @include tablet {
+      min-width: 3rem;
+      min-height: 3rem;
+    }
+
+    &--static {
+      background-image: url("../../assets/Images/Mohan-muruge.jpg");
+      background-size: cover;
+      background-position: center;
+      margin-top: 1.5rem;
+
+      @include tablet {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__input-field {
+    background-color: $alabaster;
+    min-height: 2.25rem;
+    height: 6.25rem;
+    resize: none;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 4px;
+    border-radius: 4px;
+    border: 2px solid $mercury;
+    @include root-font;
+    font-size: 0.95rem;
+
+    @include tablet {
+      padding: 0.75rem 0 0 0.75rem;
+      min-height: 2.5rem;
+      min-width: 240px;
+      height: 2.5rem;
+      margin-bottom: -4px;
+    }
+
+    &::placeholder {
+      color: $brainFlix-black;
+    }
+
+    &:hover {
+      border-color: $brainFlix-blue;
+    }
+    &:invalid {
+      border-color: $error;
+    }
+  }
+
+  &__label-input-wrapper {
+    @include tablet {
+      width: 100%;
+      margin-right: $padding-between-components-tablet;
+    }
+  }
+
+  &__label {
+    color: $silver;
+    font-weight: $font-weight-bold;
+  }
+
+  &__added-comments {
+    @include tablet {
+      width: 85%;
+      margin: auto;
+    }
+
+    @include desktop {
+      max-width: ($breakpoint-desktop - $page-margin * 2)/2;
+      margin: auto;
+    }
+  }
+  &__added-comment-wrapper {
+    display: flex;
+    margin-top: $padding-between-components-mobile;
+    border-bottom: 2px solid $mercury;
+
+    @include tablet {
+      margin-top: $padding-between-components-tablet;
+    }
+  }
+
+  &__added-comment-text-wrapper {
+    width: 100%;
+  }
+
+  &__comment-name-and-date-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  &__name-of-comment {
+    display: inline-block;
+    font-weight: $font-weight-bold;
+    margin: 0;
+  }
+  &__date-of-comment {
+    display: inline-block;
+    color: $silver;
+    margin: 0;
+  }
+  &__text-of-comment {
+    margin-bottom: $padding-between-components-mobile;
+    @include tablet {
+      margin-bottom: $padding-between-components-tablet;
+    }
+  }
+}
+
+#comment-form {
+  @include tablet {
+    // margin-right: $padding-between-components-tablet;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}

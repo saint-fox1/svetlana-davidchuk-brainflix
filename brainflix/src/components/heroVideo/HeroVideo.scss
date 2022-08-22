@@ -1,0 +1,8 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/layout.scss" as *;
+
+.hero-video {
+  height: 40vh;
+  width: 100%;
+  background-color:$brainFlix-darkBlack;
+}

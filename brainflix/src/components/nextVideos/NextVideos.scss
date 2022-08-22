@@ -1,0 +1,13 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/layout.scss" as *;
+
+.next-videos-section {
+  @include tablet {
+    width: 50%;
+  }
+  @include desktop {
+    border-left: 2px solid $mercury;
+    min-width: 400px;
+  }
+}

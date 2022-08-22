@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url(../../assets/Font/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+.comments-section {
+  background-color: #ffffff;
+  margin: 0 1rem;
+}
+@media (min-width: 48rem) {
+  .comments-section {
+    margin: 0 2.25rem;
+  }
+}
+.comments-section__form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (min-width: 48rem) {
+  .comments-section__form-wrapper {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+@media (min-width: 80rem) {
+  .comments-section__form-wrapper {
+    max-width: 36.0625rem;
+    margin: auto;
+  }
+}
+.comments-section__wrapper {
+  border-bottom: 2px solid #e1e1e1;
+}
+@media (min-width: 48rem) {
+  .comments-section__wrapper {
+    padding-bottom: 1.5rem;
+  }
+}
+@media (min-width: 80rem) {
+  .comments-section__wrapper {
+    max-width: 72.125rem;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.comments-section__title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.comments-section__img {
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  min-width: 2.25rem;
+  min-height: 2.25rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  margin-right: 1rem;
+}
+@media (min-width: 48rem) {
+  .comments-section__img {
+    min-width: 3rem;
+    min-height: 3rem;
+  }
+}
+.comments-section__img--static {
+  background-image: url("../../assets/Images/Mohan-muruge.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 1.5rem;
+}
+@media (min-width: 48rem) {
+  .comments-section__img--static {
+    margin-top: 0;
+  }
+}
+.comments-section__input-field {
+  background-color: #fafafa;
+  min-height: 2.25rem;
+  height: 6.25rem;
+  resize: none;
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 2px solid #e1e1e1;
+  font-size: 1rem;
+  color: #323232;
+  font-family: "Avenir Next";
+  font-size: 0.95rem;
+}
+@media (min-width: 48rem) {
+  .comments-section__input-field {
+    padding: 0.75rem 0 0 0.75rem;
+    min-height: 2.5rem;
+    min-width: 240px;
+    height: 2.5rem;
+    margin-bottom: -4px;
+  }
+}
+.comments-section__input-field::-webkit-input-placeholder {
+  color: #323232;
+}
+.comments-section__input-field::-moz-placeholder {
+  color: #323232;
+}
+.comments-section__input-field:-ms-input-placeholder {
+  color: #323232;
+}
+.comments-section__input-field::-ms-input-placeholder {
+  color: #323232;
+}
+.comments-section__input-field::placeholder {
+  color: #323232;
+}
+.comments-section__input-field:hover {
+  border-color: #0095ff;
+}
+.comments-section__input-field:invalid {
+  border-color: #d22d2d;
+}
+@media (min-width: 48rem) {
+  .comments-section__label-input-wrapper {
+    width: 100%;
+    margin-right: 1.5rem;
+  }
+}
+.comments-section__label {
+  color: #afafaf;
+  font-weight: 700;
+}
+@media (min-width: 48rem) {
+  .comments-section__added-comments {
+    width: 85%;
+    margin: auto;
+  }
+}
+@media (min-width: 80rem) {
+  .comments-section__added-comments {
+    max-width: 36.0625rem;
+    margin: auto;
+  }
+}
+.comments-section__added-comment-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  border-bottom: 2px solid #e1e1e1;
+}
+@media (min-width: 48rem) {
+  .comments-section__added-comment-wrapper {
+    margin-top: 1.5rem;
+  }
+}
+.comments-section__added-comment-text-wrapper {
+  width: 100%;
+}
+.comments-section__comment-name-and-date-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.comments-section__name-of-comment {
+  display: inline-block;
+  font-weight: 700;
+  margin: 0;
+}
+.comments-section__date-of-comment {
+  display: inline-block;
+  color: #afafaf;
+  margin: 0;
+}
+.comments-section__text-of-comment {
+  margin-bottom: 1rem;
+}
+@media (min-width: 48rem) {
+  .comments-section__text-of-comment {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  #comment-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}

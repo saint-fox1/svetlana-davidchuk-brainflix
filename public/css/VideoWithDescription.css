@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url(../../assets/Font/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+.video-with-description {
+  background-color: #ffffff;
+  margin: 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+@media (min-width: 48rem) {
+  .video-with-description {
+    margin: 1.5rem 2.25rem;
+  }
+}
+.video-with-description__video {
+  min-width: 140px;
+  min-height: 80px;
+  max-width: 140px;
+  max-height: 80px;
+  border-radius: 4px;
+  background-color: #e1e1e1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video-with-description__title {
+  margin-top: 0;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (min-width: 48rem) {
+  .video-with-description__title {
+    white-space: unset;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    font-weight: 700;
+  }
+}
+@media (min-width: 48rem) and (min-width: 48rem) {
+  .video-with-description__title {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+}
+.video-with-description__channel {
+  display: block;
+  margin: 0;
+}
+.video-with-description__text-wrapper {
+  margin: 0 1rem;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 156px);
+}

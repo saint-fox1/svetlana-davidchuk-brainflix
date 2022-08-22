@@ -1,0 +1,42 @@
+//Side Margins
+
+//Tablet
+$side-margin-tablet: 2.25rem;
+
+//Mobile
+$side-margin-mobile: 1rem;
+
+//Padding
+
+//Desktop & Tablet
+
+$padding-before-headlines-tablet: 2.25rem;
+$padding-after-headlines-tablet: 1.5rem;
+$padding-between-components-tablet: 1.5rem;
+
+//Mobile
+
+$padding-before-headlines-mobile: 1.5rem;
+$padding-after-headlines-mobile: 1rem;
+$padding-between-components-mobile: 1rem;
+
+$breakpoint-tablet: 48rem;
+$breakpoint-desktop: 80rem;
+$page-margin: 3.9375rem;
+
+@mixin tablet {
+  @media (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+@mixin container-desktop {
+  max-width: $breakpoint-desktop - $page-margin * 2;
+  margin: auto;
+}

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url(../../assets/Font/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+@media (min-width: 48rem) {
+  .next-videos-section {
+    width: 50%;
+  }
+}
+@media (min-width: 80rem) {
+  .next-videos-section {
+    border-left: 2px solid #e1e1e1;
+    min-width: 400px;
+  }
+}

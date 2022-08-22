@@ -1,0 +1,16 @@
+@use "./styles/partials/colors.scss" as *;
+@use "./styles/partials/fonts.scss" as *;
+@use "./styles/partials/layout.scss" as *;
+
+:root {
+    @include root-font;
+  }
+
+.App {
+  background-color:$white;
+}
+
+*{
+    box-sizing: border-box;
+}
+

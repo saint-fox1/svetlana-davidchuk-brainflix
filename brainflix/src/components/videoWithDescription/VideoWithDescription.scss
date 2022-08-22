@@ -1,0 +1,48 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/layout.scss" as *;
+
+.video-with-description {
+  background-color: $white;
+  margin: $padding-between-components-mobile $side-margin-mobile;
+  display: flex;
+  cursor: pointer;
+
+  @include tablet {
+    margin: $padding-between-components-tablet $side-margin-tablet;
+  }
+  &__video {
+    min-width: 140px;
+    min-height: 80px;
+    max-width: 140px;
+    max-height: 80px;
+    border-radius: 4px;
+    background-color: $mercury;
+    object-fit: cover;
+  }
+  &__title {
+    margin-top: 0;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    @include tablet {
+      white-space: unset;
+      @include subheader;
+    }
+  }
+  &__channel {
+    display: block;
+    margin: 0;
+  }
+
+  &__text-wrapper {
+    margin: 0 $padding-between-components-mobile;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 156px);
+  }
+}
