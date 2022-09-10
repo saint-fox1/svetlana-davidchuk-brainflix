@@ -6,7 +6,6 @@ function CurrentVideoDescription(props) {
   const timestamp = props.currentVideo.timestamp;
   const date = new Date(timestamp);
 
-  console.log(props);
   return (
     <div className="current-video-description__wrapper">
       <h1 className="current-video-description__title">
