@@ -60,22 +60,35 @@ function Comments(props) {
           <div className="comments-section__img--static comments-section__img"></div>
           <form id="comment-form">
             <div className="comments-section__label-input-wrapper">
-              {/* <label for="comment-input" className="comments-section__label">
-                JOIN THE CONVERSATION
-              </label> */}
               <SubTitle subTitle='JOIN THE CONVERSATION'/>
-              {/* <textarea
+              <CommentBoxBig placeholder='Add a new comment'/>
+            </div>
+            <Button name="COMMENT" icon={addCommentIcon} />
+          </form>
+        </div>
+        
+        {/* <div className="comments-section__wrapper">
+        <h3 className="comments-section__title">3 Comments</h3>
+        <div className="comments-section__form-wrapper">
+          <div className="comments-section__img--static comments-section__img"></div>
+          <form id="comment-form">
+            <div className="comments-section__label-input-wrapper">
+              <label for="comment-input" className="comments-section__label">
+                JOIN THE CONVERSATION
+              </label>
+              <SubTitle subTitle='JOIN THE CONVERSATION'/>
+              <textarea
                 id="comment-input"
                 className="comments-section__input-field"
                 type="text"
                 name="comment"
                 placeholder="Add a new comment"
-              ></textarea> */}
+              ></textarea>
               <CommentBoxBig placeholder='Add a new comment'/>
             </div>
-            <Button name="COMMENT" image={addCommentIcon} />
+            <Button name="COMMENT" icon={addCommentIcon} />
           </form>
-        </div>
+        </div> */}
 
         {/* Added Comments */}
         <div

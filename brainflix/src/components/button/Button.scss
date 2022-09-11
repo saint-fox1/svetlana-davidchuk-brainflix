@@ -3,17 +3,31 @@
 @use "../../styles/partials/layout.scss" as *;
 
 .button {
-  background-color: $brainFlix-blue;
-  border-color: $brainFlix-blue;
   height: 2.5rem;
   width: 100%;
   border-radius: 0.25rem;
   margin: 1rem 0;
 
+  &--primary {
+    background-color: $brainFlix-blue;
+    border-color: $brainFlix-blue;
+    color: $white;
+
+    &:hover {
+      background-color: $brainFlix-darkBlue;
+      border-color: $brainFlix-darkBlue;
+    }
+  }
+  &--secondary {
+    background-color: $white;
+    border: none;
+    color: $brainFlix-blue;
+  }
+
   @include tablet {
     display: flex;
     justify-content: space-between;
-   align-items: center;
+    align-items: center;
     min-width: 9.375rem;
     width: fit-content;
 
@@ -21,7 +35,6 @@
   }
 
   & p {
-    color: $white;
     @include labels-buttons;
     margin: 0;
     text-align: center;
@@ -30,9 +43,5 @@
   & img {
     height: 1.25rem;
     float: left;
-  }
-  &:hover {
-    background-color: $brainFlix-darkBlue;
-    border-color: $brainFlix-darkBlue;
   }
 }

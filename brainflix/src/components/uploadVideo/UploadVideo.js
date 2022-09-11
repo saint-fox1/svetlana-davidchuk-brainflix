@@ -3,21 +3,28 @@ import VideoThumbnail from "../videoThumbnail/VideoThumbnail.js";
 import SubTitle from "../subTitle/SubTitle.js";
 import SectionTitle from "../sectionTitle/SectionTitle.js";
 import CommentBoxBig from "../commentBoxBig/CommentBoxBig.js";
+import CommentBoxSmall from "../commentBoxSmall/CommentBoxSmall.js";
+import Button from "../button/Button.js";
+import publishIcon from "../../assets/Icons/publish.svg";
 
 function UploadVideo() {
   return (
-    <div className='uploadVideo'>
-    <SectionTitle sectionTitle='Upload Video'/>
-      <SubTitle subTitle="VIDEO THUMBNAIL" />
-      <VideoThumbnail />
-      <SubTitle subTitle="TITLE YOUR VIDEO" />
-      {/* small box here */}
-      <SubTitle subTitle="ADD A VIDEO DESCRIPTION" />
-      <CommentBoxBig placeholder="Add a description to your video"/>
-       
-        
+    <div className="upload-video">
+      <SectionTitle sectionTitle="Upload Video" />
+      <div className="upload-video__details-wrapper">
+        <SubTitle subTitle="VIDEO THUMBNAIL" />
+        <VideoThumbnail />
+        <SubTitle subTitle="TITLE YOUR VIDEO" />
+        <CommentBoxSmall placeholder="Add a title to your video" />
+        <SubTitle subTitle="ADD A VIDEO DESCRIPTION" />
+        <CommentBoxBig placeholder="Add a description to your video" />
+      </div>
+      <div className="upload-video__button-wrapper">
+      <Button name="PUBLISH" icon={publishIcon} />
+      <Button name="CANCEL"/>
+      </div>
     </div>
-  )
+  );
 }
 
 export default UploadVideo;

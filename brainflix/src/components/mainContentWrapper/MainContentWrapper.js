@@ -12,7 +12,6 @@ function MainContentWrapper(props) {
       </div>
       <NextVideos
         nextVideos={props.nextVideos}
-        onVideoClick={props.setcurrentVideoId}
       />
     </div>
   );

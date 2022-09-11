@@ -1,15 +1,16 @@
 import "./CommentBoxBig.scss";
 
 function CommentBoxBig(props) {
-  return (  
-        <textarea
-          id="comment-input"
-          className="comments-section__input-field"
-          type="text"
-          name="comment"
-          placeholder={props.placeholder}
-        ></textarea>
-  )
+  return (
+    <form className="comment-form">
+    <textarea
+      className="comment-form__input-field--big"
+      type="text"
+      name="comment"
+      placeholder={props.placeholder}
+    ></textarea>
+    </form>
+  );
 }
 
 export default CommentBoxBig;

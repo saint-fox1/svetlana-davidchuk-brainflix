@@ -6,5 +6,9 @@
   color: $silver;
   margin: $padding-between-components-mobile 0 8px 0;
   font-weight: 600;
+  font-size: 1rem;
+  
+  @include tablet{
 
+  }
 }

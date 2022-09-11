@@ -4,10 +4,6 @@ import SubTitle from "../subTitle/SubTitle.js";
 
 function NextVideos(props) {
   const nextVideos = props.nextVideos;
-  const onVideoClick = props.onVideoClick;
-  if (!onVideoClick) {
-    return "fail";
-  }
 
   return (
     <div className="next-videos-section">
@@ -18,7 +14,6 @@ function NextVideos(props) {
           <VideoWithDescription
             key={`video-${index}`}
             video={nextVideo}
-            onClick={() => onVideoClick(nextVideo.id)}
           />
         );
       })}

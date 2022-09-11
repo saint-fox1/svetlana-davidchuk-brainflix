@@ -1,12 +1,13 @@
 import "./Button.scss";
 
-
 function Button(props) {
+  const type = props.icon ? "primary" : "secondary";
+
   return (
-   <button className='button'>
-        <img src={props.image} alt="upload-icon" />
-        <p>{props.name}</p>
-      </button> 
+    <button className={`button button--${type}`}>
+      {props.icon && <img src={props.icon} alt="upload-icon" />}
+      <p>{props.name}</p>
+    </button>
   );
 }
 

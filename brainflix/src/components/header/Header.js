@@ -9,7 +9,6 @@ function Header() {
   return (
     <header className="header">
       <Link to="/">
-        {" "}
         <img
           className="header__website-logo"
           src={websiteLogo}
@@ -19,7 +18,11 @@ function Header() {
       <form id="search-form">
         <input id="search-input" type="text" placeholder="Search" />
         <ArtistImage />
-        <Button name="UPLOAD" image={uploadIcon} />
+        <div className="header__button-wrapper">
+          <Link to="/upload-video">
+            <Button name="UPLOAD" icon={uploadIcon} />
+          </Link>
+        </div>
       </form>
     </header>
   );

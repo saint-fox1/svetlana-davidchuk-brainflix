@@ -2,7 +2,7 @@ import "./App.scss";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./components/header/Header.js";
 import UploadVideoPage from "./pages/uploadVideoPage/UploadVideoPage.js";
-import HomePage from "./pages/homePage/HomePage.js";
+import VideoPlayerPage from "./pages/videoPlayerPage/VideoPlayerPage.js";
 
 function App() {
   return (
@@ -10,8 +10,9 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route path="/" exact component={HomePage} />
+          <Route path="/" exact component={VideoPlayerPage} />
           <Route path="/upload-video" component={UploadVideoPage} />
+          <Route path="/video/:videoId" component={VideoPlayerPage} />
         </Switch>
       </BrowserRouter>
     </div>
