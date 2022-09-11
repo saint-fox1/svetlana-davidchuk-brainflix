@@ -1,0 +1,16 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/layout.scss" as *;
+
+.videoThumbnail {
+  max-width: 400px;
+  max-height: 250px;
+  min-width: 300px;
+  min-height: 150px;
+  background-color: $mercury;
+  border-radius: 4px;
+
+  @include tablet {
+    margin-right: $side-margin-tablet;
+  }
+}

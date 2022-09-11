@@ -5,10 +5,11 @@ import videoDetailsJson from "./assets/Data/video-details.json";
 import Header from "./components/header/Header.js";
 import HeroVideo from "./components/heroVideo/HeroVideo.js";
 import MainContentWrapper from "./components/mainContentWrapper/MainContentWrapper.js";
+import VideoDetailsPage from "./pages/VideoDetailsPage.js";
 
 function App() {
-  const [videoData, setVideoData] = useState(videosJson); // storing the 1st api call
-  const [videoDetails, setVideoDetails] = useState(videoDetailsJson); // storing the 2nd api call
+  //const [videoData, setVideoData] = useState(videosJson); // storing the 1st api call
+  //const [videoDetails, setVideoDetails] = useState(videoDetailsJson); // storing the 2nd api call
   const [currentVideoId, setcurrentVideoId] = useState(videosJson[0].id); //keeps the initial state of the fist video's id
   const currentVideo = videoDetailsJson.find(
     (video) => video.id === currentVideoId
@@ -24,6 +25,7 @@ function App() {
         nextVideos={nextVideos}
         setcurrentVideoId={setcurrentVideoId}
       />
+<VideoDetailsPage/>
     </div>
   );
 }

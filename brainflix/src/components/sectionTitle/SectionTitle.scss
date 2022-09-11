@@ -1,0 +1,14 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/layout.scss" as *;
+
+.sectionTitle {
+  margin: 0;
+  padding-bottom: $padding-after-headlines-mobile;
+
+  @include tablet {
+    padding-bottom: $padding-after-headlines-tablet;
+    border: 0;
+    border-bottom: 2px solid $mercury;
+  }
+}

@@ -1,0 +1,9 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/layout.scss" as *;
+
+.uploadVideo {
+  border-top: 2px solid $mercury;
+  padding: $padding-before-headlines-mobile $side-margin-mobile
+    $padding-between-components-mobile $side-margin-mobile;
+}

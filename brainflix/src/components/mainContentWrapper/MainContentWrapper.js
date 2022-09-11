@@ -5,7 +5,7 @@ import Comments from "../comments/Comments.js";
 
 function MainContentWrapper(props) {
   return (
-    <div className='main-content-wrapper'>
+    <div className="main-content-wrapper">
       <div>
         <CurrentVideoDescription currentVideo={props.currentVideo} />
         <Comments currentVideo={props.currentVideo} />

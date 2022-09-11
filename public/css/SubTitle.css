@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url(../../assets/Font/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+.subTitle {
+  color: #afafaf;
+  margin: 1rem 0 8px 0;
+  font-weight: 600;
+}
+@media (min-width: 48rem) {
+  .subTitle {
+    margin: 2.25rem 2.25rem;
+  }
+}
