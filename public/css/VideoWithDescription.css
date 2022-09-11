@@ -12,7 +12,7 @@
 }
 .video-with-description {
   background-color: #ffffff;
-  margin: 1rem 1rem;
+  margin: 1rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,7 +20,7 @@
 }
 @media (min-width: 48rem) {
   .video-with-description {
-    margin: 1.5rem 2.25rem;
+    margin: 1.5rem 0;
   }
 }
 .video-with-description__video {

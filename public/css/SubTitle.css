@@ -15,8 +15,3 @@
   margin: 1rem 0 8px 0;
   font-weight: 600;
 }
-@media (min-width: 48rem) {
-  .subTitle {
-    margin: 2.25rem 2.25rem;
-  }
-}

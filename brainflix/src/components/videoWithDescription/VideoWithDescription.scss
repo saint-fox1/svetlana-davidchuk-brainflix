@@ -4,12 +4,12 @@
 
 .video-with-description {
   background-color: $white;
-  margin: $padding-between-components-mobile $side-margin-mobile;
+  margin: $padding-between-components-mobile 0;
   display: flex;
   cursor: pointer;
 
   @include tablet {
-    margin: $padding-between-components-tablet $side-margin-tablet;
+    margin: $padding-between-components-tablet 0;
   }
   &__video {
     min-width: 8.75rem;

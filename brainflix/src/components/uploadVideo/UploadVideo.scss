@@ -6,4 +6,8 @@
   border-top: 2px solid $mercury;
   padding: $padding-before-headlines-mobile $side-margin-mobile
     $padding-between-components-mobile $side-margin-mobile;
+  @include tablet {
+    padding: $padding-before-headlines-mobile $side-margin-tablet
+      $padding-between-components-mobile $side-margin-tablet;
+  }
 }

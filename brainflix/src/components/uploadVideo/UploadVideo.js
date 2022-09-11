@@ -2,6 +2,7 @@ import "./UploadVideo.scss";
 import VideoThumbnail from "../videoThumbnail/VideoThumbnail.js";
 import SubTitle from "../subTitle/SubTitle.js";
 import SectionTitle from "../sectionTitle/SectionTitle.js";
+import CommentBoxBig from "../commentBoxBig/CommentBoxBig.js";
 
 function UploadVideo() {
   return (
@@ -10,9 +11,9 @@ function UploadVideo() {
       <SubTitle subTitle="VIDEO THUMBNAIL" />
       <VideoThumbnail />
       <SubTitle subTitle="TITLE YOUR VIDEO" />
-      {/* first comment box */}
+      {/* small box here */}
       <SubTitle subTitle="ADD A VIDEO DESCRIPTION" />
-      {/* seconf comment box */}
+      <CommentBoxBig placeholder="Add a description to your video"/>
        
         
     </div>

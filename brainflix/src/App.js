@@ -1,31 +1,19 @@
 import "./App.scss";
-import { useState } from "react";
-import videosJson from "./assets/Data/videos.json";
-import videoDetailsJson from "./assets/Data/video-details.json";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./components/header/Header.js";
-import HeroVideo from "./components/heroVideo/HeroVideo.js";
-import MainContentWrapper from "./components/mainContentWrapper/MainContentWrapper.js";
-import VideoDetailsPage from "./pages/VideoDetailsPage.js";
+import UploadVideoPage from "./pages/uploadVideoPage/UploadVideoPage.js";
+import HomePage from "./pages/homePage/HomePage.js";
 
 function App() {
-  //const [videoData, setVideoData] = useState(videosJson); // storing the 1st api call
-  //const [videoDetails, setVideoDetails] = useState(videoDetailsJson); // storing the 2nd api call
-  const [currentVideoId, setcurrentVideoId] = useState(videosJson[0].id); //keeps the initial state of the fist video's id
-  const currentVideo = videoDetailsJson.find(
-    (video) => video.id === currentVideoId
-  );
-  const nextVideos = videosJson.filter((video) => video.id !== currentVideo.id);
-
   return (
     <div className="App">
-      <Header />
-      <HeroVideo currentVideo={currentVideo} />
-      <MainContentWrapper
-        currentVideo={currentVideo}
-        nextVideos={nextVideos}
-        setcurrentVideoId={setcurrentVideoId}
-      />
-<VideoDetailsPage/>
+      <BrowserRouter>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/upload-video" component={UploadVideoPage} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

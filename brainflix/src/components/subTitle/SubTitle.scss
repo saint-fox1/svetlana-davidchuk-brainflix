@@ -7,7 +7,4 @@
   margin: $padding-between-components-mobile 0 8px 0;
   font-weight: 600;
 
-  @include tablet {
-    margin: $padding-before-headlines-tablet $side-margin-tablet;
-  }
 }
