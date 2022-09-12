@@ -73,7 +73,6 @@
     @include tablet {
       flex-wrap: nowrap;
       > :nth-child(2) {
-        //image tag
         order: 3;
         margin-left: $padding-between-components-tablet;
       }

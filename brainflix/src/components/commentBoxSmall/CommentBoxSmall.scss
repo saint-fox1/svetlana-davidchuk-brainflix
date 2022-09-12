@@ -13,34 +13,34 @@
   @include desktop {
     margin-right: $padding-between-components-tablet;
   }
+}
 
-  &__input-field--small {
-    background-color: $alabaster;
-    min-height: 2.25rem;
-    resize: none;
-    width: 100%;
-    padding: 0.75rem;
-    border-radius: 4px;
-    border: 2px solid $mercury;
-    @include root-font;
-    font-size: 0.95rem;
+.form-input-field--small {
+  background-color: $alabaster;
+  min-height: 2.25rem;
+  resize: none;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 2px solid $mercury;
+  @include root-font;
+  font-size: 0.95rem;
 
-    @include tablet {
-      padding: 1rem;
-      min-height: 2.5rem;
-      min-width: 15rem;
-      height: 2.6rem;
-    }
+  @include tablet {
+    padding: 1rem;
+    min-height: 2.5rem;
+    min-width: 15rem;
+    height: 2.6rem;
+  }
 
-    &::placeholder {
-      color: $brainFlix-black;
-    }
+  &::placeholder {
+    color: $brainFlix-black;
+  }
 
-    &:hover {
-      border-color: $brainFlix-blue;
-    }
-    &:invalid {
-      border-color: $error;
-    }
+  &:hover {
+    border-color: $brainFlix-blue;
+  }
+  &:invalid {
+    border-color: $error;
   }
 }

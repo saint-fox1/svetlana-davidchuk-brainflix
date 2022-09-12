@@ -29,7 +29,8 @@
     margin-right: 1.5rem;
   }
 }
-.comment-form__input-field--small {
+
+.form-input-field--small {
   background-color: #fafafa;
   min-height: 2.25rem;
   resize: none;
@@ -43,31 +44,31 @@
   font-size: 0.95rem;
 }
 @media (min-width: 48rem) {
-  .comment-form__input-field--small {
+  .form-input-field--small {
     padding: 1rem;
     min-height: 2.5rem;
     min-width: 15rem;
     height: 2.6rem;
   }
 }
-.comment-form__input-field--small::-webkit-input-placeholder {
+.form-input-field--small::-webkit-input-placeholder {
   color: #323232;
 }
-.comment-form__input-field--small::-moz-placeholder {
+.form-input-field--small::-moz-placeholder {
   color: #323232;
 }
-.comment-form__input-field--small:-ms-input-placeholder {
+.form-input-field--small:-ms-input-placeholder {
   color: #323232;
 }
-.comment-form__input-field--small::-ms-input-placeholder {
+.form-input-field--small::-ms-input-placeholder {
   color: #323232;
 }
-.comment-form__input-field--small::placeholder {
+.form-input-field--small::placeholder {
   color: #323232;
 }
-.comment-form__input-field--small:hover {
+.form-input-field--small:hover {
   border-color: #0095ff;
 }
-.comment-form__input-field--small:invalid {
+.form-input-field--small:invalid {
   border-color: #d22d2d;
 }

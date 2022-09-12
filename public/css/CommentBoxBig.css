@@ -29,7 +29,8 @@
     margin-right: 1.5rem;
   }
 }
-.comment-form__input-field--big {
+
+.form-input-field--big {
   background-color: #fafafa;
   min-height: 2.25rem;
   resize: none;
@@ -44,33 +45,31 @@
   font-size: 0.95rem;
 }
 @media (min-width: 48rem) {
-  .comment-form__input-field--big {
+  .form-input-field--big {
     padding: 0.75rem 0 0 0.75rem;
-    margin-top: 4px;
     min-height: 2.5rem;
     min-width: 15rem;
     height: 2.6rem;
-    margin-bottom: -4px;
   }
 }
-.comment-form__input-field--big::-webkit-input-placeholder {
+.form-input-field--big::-webkit-input-placeholder {
   color: #323232;
 }
-.comment-form__input-field--big::-moz-placeholder {
+.form-input-field--big::-moz-placeholder {
   color: #323232;
 }
-.comment-form__input-field--big:-ms-input-placeholder {
+.form-input-field--big:-ms-input-placeholder {
   color: #323232;
 }
-.comment-form__input-field--big::-ms-input-placeholder {
+.form-input-field--big::-ms-input-placeholder {
   color: #323232;
 }
-.comment-form__input-field--big::placeholder {
+.form-input-field--big::placeholder {
   color: #323232;
 }
-.comment-form__input-field--big:hover {
+.form-input-field--big:hover {
   border-color: #0095ff;
 }
-.comment-form__input-field--big:invalid {
+.form-input-field--big:invalid {
   border-color: #d22d2d;
 }

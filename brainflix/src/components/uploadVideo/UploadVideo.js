@@ -12,16 +12,20 @@ function UploadVideo() {
     <div className="upload-video">
       <SectionTitle sectionTitle="Upload Video" />
       <div className="upload-video__details-wrapper">
+        <div>
         <SubTitle subTitle="VIDEO THUMBNAIL" />
         <VideoThumbnail />
-        <SubTitle subTitle="TITLE YOUR VIDEO" />
-        <CommentBoxSmall placeholder="Add a title to your video" />
-        <SubTitle subTitle="ADD A VIDEO DESCRIPTION" />
-        <CommentBoxBig placeholder="Add a description to your video" />
+        </div>
+        <div className="upload-video__form-wrapper">
+          <SubTitle subTitle="TITLE YOUR VIDEO" />
+          <CommentBoxSmall placeholder="Add a title to your video" />
+          <SubTitle subTitle="ADD A VIDEO DESCRIPTION" />
+          <CommentBoxBig placeholder="Add a description to your video" />
+        </div>
       </div>
       <div className="upload-video__button-wrapper">
-      <Button name="PUBLISH" icon={publishIcon} />
-      <Button name="CANCEL"/>
+        <Button name="PUBLISH" icon={publishIcon} />
+        <Button name="CANCEL" />
       </div>
     </div>
   );

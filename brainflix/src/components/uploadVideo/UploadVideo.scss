@@ -18,6 +18,9 @@
       border-top: 2px solid $mercury;
       border-bottom: 2px solid $mercury;
     }
+    @include desktop {
+      display: flex;
+    }
   }
   &__button-wrapper {
     @include tablet {
@@ -25,6 +28,11 @@
       display: flex;
       justify-content: flex-start;
       flex-direction: row-reverse;
+    }
+  }
+  &__form-wrapper {
+    @include desktop {
+      width: 100%;
     }
   }
 }
