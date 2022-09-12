@@ -1,0 +1,38 @@
+@use "../../styles/partials/colors.scss" as *;
+@use "../../styles/partials/fonts.scss" as *;
+@use "../../styles/partials/layout.scss" as *;
+
+.upload-video {
+  border-top: 2px solid $mercury;
+  padding: $padding-before-headlines-mobile $side-margin-mobile
+    $padding-between-components-mobile $side-margin-mobile;
+  @include tablet {
+    padding: $padding-before-headlines-mobile $side-margin-tablet
+      $padding-between-components-mobile $side-margin-tablet;
+  }
+
+  &__details-wrapper {
+    @include tablet {
+      padding-top: 8px;
+      padding-bottom: $padding-between-components-tablet;
+      border-top: 2px solid $mercury;
+      border-bottom: 2px solid $mercury;
+    }
+    @include desktop {
+      display: flex;
+    }
+  }
+  &__button-wrapper {
+    @include tablet {
+      margin-top: $padding-between-components-tablet;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+    }
+  }
+  &__form-wrapper {
+    @include desktop {
+      width: 100%;
+    }
+  }
+}

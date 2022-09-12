@@ -2,7 +2,7 @@ import Button from "../button/Button.js";
 import "./Comments.scss";
 import addCommentIcon from "../../assets/Icons/add_comment.svg";
 import SubTitle from "../subTitle/SubTitle.js";
-import CommentBoxBig from "../commentBoxBig/CommentBoxBig.js";
+import CommentBoxBig from "../formBoxBig/FormBoxBig.js";
 
 function Comments(props) {
   const comments = props.currentVideo.comments;

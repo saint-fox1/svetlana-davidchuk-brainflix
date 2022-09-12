@@ -2,7 +2,7 @@
 @use "../../styles/partials/fonts.scss" as *;
 @use "../../styles/partials/layout.scss" as *;
 
-.comment-form {
+.text-area {
     @include tablet {
       // margin-right: $padding-between-components-tablet;
       width: 100%;
