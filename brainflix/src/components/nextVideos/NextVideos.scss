@@ -3,10 +3,10 @@
 @use "../../styles/partials/layout.scss" as *;
 
 .next-videos-section {
-  padding: 8px $side-margin-mobile;
+  padding: 0.5rem $side-margin-mobile;
 
   @include tablet {
-    padding: 16px $side-margin-tablet;
+    padding: 1rem $side-margin-tablet;
     width: 50%;
   }
   @include desktop {
@@ -23,6 +23,6 @@
     }
   }
   &__videos-wrapper {
-    padding-top: 8px;
+    padding-top: 0.5rem;
   }
 }

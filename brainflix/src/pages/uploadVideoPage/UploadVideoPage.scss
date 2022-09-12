@@ -13,7 +13,7 @@
 
   &__details-wrapper {
     @include tablet {
-      padding-top: 8px;
+      padding-top: 0.5rem;
       padding-bottom: $padding-between-components-tablet;
       border-top: 2px solid $mercury;
       border-bottom: 2px solid $mercury;
