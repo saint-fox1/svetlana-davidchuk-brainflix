@@ -10,6 +10,8 @@
     justify-content: center;
     max-height: 1.5625rem;
     max-width: 7.5rem;
+    min-height: 1.5625rem;
+    min-width: 7.5rem;
     margin: 1rem auto;
 
     @include tablet {
@@ -25,6 +27,10 @@
     @include container-desktop;
     margin-top: 1rem;
     margin-bottom: 1rem;
+  }
+
+  &__button-wrapper {
+    width: 100%;
   }
 
   #search-input {
@@ -67,7 +73,6 @@
     @include tablet {
       flex-wrap: nowrap;
       > :nth-child(2) {
-        //image tag
         order: 3;
         margin-left: $padding-between-components-tablet;
       }

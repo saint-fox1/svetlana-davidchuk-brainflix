@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Avenir Next";
+  src: url(../../assets/Font/AvenirNextLTPro-Regular.otf) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Avenir Next";
+  src: url(../../assets/Font/AvenirNextLTPro-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+@media (min-width: 48rem) {
+  .comment-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+@media (min-width: 80rem) {
+  .comment-form {
+    margin-right: 1.5rem;
+  }
+}
+
+.form-input-field--small {
+  background-color: #fafafa;
+  min-height: 2.25rem;
+  resize: none;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 2px solid #e1e1e1;
+  font-size: 1rem;
+  color: #323232;
+  font-family: "Avenir Next";
+  font-size: 0.95rem;
+}
+@media (min-width: 48rem) {
+  .form-input-field--small {
+    padding: 1rem;
+    min-height: 2.5rem;
+    min-width: 15rem;
+    height: 2.6rem;
+  }
+}
+.form-input-field--small::-webkit-input-placeholder {
+  color: #323232;
+}
+.form-input-field--small::-moz-placeholder {
+  color: #323232;
+}
+.form-input-field--small:-ms-input-placeholder {
+  color: #323232;
+}
+.form-input-field--small::-ms-input-placeholder {
+  color: #323232;
+}
+.form-input-field--small::placeholder {
+  color: #323232;
+}
+.form-input-field--small:hover {
+  border-color: #0095ff;
+}
+.form-input-field--small:invalid {
+  border-color: #d22d2d;
+}

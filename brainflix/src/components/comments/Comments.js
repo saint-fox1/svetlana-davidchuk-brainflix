@@ -1,6 +1,8 @@
 import Button from "../button/Button.js";
 import "./Comments.scss";
 import addCommentIcon from "../../assets/Icons/add_comment.svg";
+import SubTitle from "../subTitle/SubTitle.js";
+import CommentBoxBig from "../formBoxBig/FormBoxBig.js";
 
 function Comments(props) {
   const comments = props.currentVideo.comments;
@@ -58,20 +60,12 @@ function Comments(props) {
           <div className="comments-section__img--static comments-section__img"></div>
           <form id="comment-form">
             <div className="comments-section__label-input-wrapper">
-              <label for="comment-input" className="comments-section__label">
-                JOIN THE CONVERSATION
-              </label>
-              <textarea
-                id="comment-input"
-                className="comments-section__input-field"
-                type="text"
-                name="comment"
-                placeholder="Add a new comment"
-              ></textarea>
+              <SubTitle subTitle='JOIN THE CONVERSATION'/>
+              <CommentBoxBig placeholder='Add a new comment'/>
             </div>
-            <Button name="COMMENT" image={addCommentIcon} />
+            <Button name="COMMENT" icon={addCommentIcon} />
           </form>
-        </div>
+        </div> 
 
         {/* Added Comments */}
         <div

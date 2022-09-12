@@ -16,6 +16,7 @@
   &__form-wrapper {
     display: flex;
     justify-content: center;
+    width: 100%;
 
     @include tablet {
       justify-content: flex-start;
@@ -58,39 +59,6 @@
       @include tablet {
         margin-top: 0;
       }
-    }
-  }
-
-  &__input-field {
-    background-color: $alabaster;
-    min-height: 2.25rem;
-    height: 6.25rem;
-    resize: none;
-    width: 100%;
-    padding: 0.75rem;
-    margin-top: 4px;
-    border-radius: 4px;
-    border: 2px solid $mercury;
-    @include root-font;
-    font-size: 0.95rem;
-
-    @include tablet {
-      padding: 0.75rem 0 0 0.75rem;
-      min-height: 2.5rem;
-      min-width: 15rem;
-      height: 2.6rem;
-      margin-bottom: -4px;
-    }
-
-    &::placeholder {
-      color: $brainFlix-black;
-    }
-
-    &:hover {
-      border-color: $brainFlix-blue;
-    }
-    &:invalid {
-      border-color: $error;
     }
   }
 
@@ -165,9 +133,8 @@
 }
 
 #comment-form {
+  width: 100%;
   @include tablet {
-    // margin-right: $padding-between-components-tablet;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
