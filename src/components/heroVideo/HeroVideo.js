@@ -5,6 +5,7 @@ function HeroVideo(props) {
     <video className="hero-video" controls poster={props.currentVideo.image}>
       <source src={props.currentVideo.video}></source>
     </video>
+    
   );
 }
 
