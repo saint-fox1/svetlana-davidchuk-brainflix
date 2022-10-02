@@ -7,6 +7,7 @@ function FormBoxBig(props) {
       type="text"
       name="comment"
       placeholder={props.placeholder}
+      id={props.id}
     ></textarea>
   );
 }
