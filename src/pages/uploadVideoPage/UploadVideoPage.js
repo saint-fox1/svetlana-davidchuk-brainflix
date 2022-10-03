@@ -10,18 +10,17 @@ import axios from "axios";
 
 function UploadVideoPage() {
   const onSubmit = () => {
-    axios 
+    axios
       .post("http://localhost:8080/videos/", {
         title: document.getElementById("videoTitleInput").value,
         description: document.getElementById("videoDescriptionInput").value,
-        image: "http://localhost:8080/thumbnail.jpg",
-        channel: "Savetlana's Channel",
+        image: "http://localhost:8080/images/thumbnail.jpg",
+        channel: "Svetlana's Channel",
         duration: "4:00",
         video: "https://project-2-api.herokuapp.com/stream",
       })
       .then((response) => {
         alert("Upload is successful");
-        console.log(response);
       })
       .catch((e) => {
         console.error("The error:", e);

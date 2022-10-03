@@ -1,16 +1,18 @@
 @use "../../styles/partials/colors.scss" as *;
 @use "../../styles/partials/fonts.scss" as *;
 @use "../../styles/partials/layout.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
 
 .button {
   height: 2.5rem;
   width: 100%;
   border-radius: 0.25rem;
   margin: 1rem 0;
+  cursor: pointer;
 
   &--primary {
     background-color: $brainFlix-blue;
-    border-color: $brainFlix-blue;
+    border: 2px solid $brainFlix-blue;
     color: $white;
 
     &:hover {

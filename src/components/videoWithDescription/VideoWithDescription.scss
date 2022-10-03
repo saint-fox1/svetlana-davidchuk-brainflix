@@ -1,6 +1,7 @@
 @use "../../styles/partials/colors.scss" as *;
 @use "../../styles/partials/fonts.scss" as *;
 @use "../../styles/partials/layout.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
 
 .video-with-description {
   background-color: $white;
@@ -27,10 +28,11 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    @include subheader;
+    
 
     @include tablet {
       white-space: unset;
-      @include subheader;
     }
   }
   &__channel {
