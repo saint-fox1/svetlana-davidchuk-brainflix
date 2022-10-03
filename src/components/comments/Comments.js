@@ -55,17 +55,17 @@ function Comments(props) {
   return (
     <section className="comments-section">
       <div className="comments-section__wrapper">
-        <h3 className="comments-section__title">3 Comments</h3>
+        <h3 className="comments-section__title">{comments.length} Comments</h3>
         <div className="comments-section__form-wrapper">
           <div className="comments-section__img--static comments-section__img"></div>
           <form id="comment-form">
             <div className="comments-section__label-input-wrapper">
-              <SubTitle subTitle='JOIN THE CONVERSATION'/>
-              <CommentBoxBig placeholder='Add a new comment'/>
+              <SubTitle subTitle="JOIN THE CONVERSATION" />
+              <CommentBoxBig placeholder="Add a new comment" />
             </div>
             <Button name="COMMENT" icon={addCommentIcon} />
           </form>
-        </div> 
+        </div>
 
         {/* Added Comments */}
         <div

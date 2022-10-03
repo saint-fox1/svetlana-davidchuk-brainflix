@@ -33,7 +33,7 @@ class VideoPlayerPage extends React.Component {
         this.props.match.params.videoId || this.state.videos[0].id;
 
       axios
-        .get("http://localhost:8080/video/" + currentVideoId)
+        .get("http://localhost:8080/videos/" + currentVideoId)
         .then((response) => {
           const data = response.data;
           this.setState({ currentVideo: data });

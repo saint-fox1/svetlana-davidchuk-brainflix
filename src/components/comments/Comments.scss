@@ -1,6 +1,7 @@
 @use "../../styles/partials/colors.scss" as *;
 @use "../../styles/partials/fonts.scss" as *;
 @use "../../styles/partials/layout.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
 
 .comments-section {
   background-color: $white;
@@ -48,6 +49,9 @@
     @include tablet {
       min-width: 3rem;
       min-height: 3rem;
+    }
+    @include desktop {
+      margin-right: $side-margin-tablet;
     }
 
     &--static {

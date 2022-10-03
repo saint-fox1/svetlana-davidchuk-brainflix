@@ -1,46 +1,47 @@
 @use "../../styles/partials/colors.scss" as *;
 @use "../../styles/partials/fonts.scss" as *;
 @use "../../styles/partials/layout.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
 
 .text-area {
-    @include tablet {
-      // margin-right: $padding-between-components-tablet;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-    }
-    @include desktop {
-      margin-right: $padding-between-components-tablet;
-    }
-  }
-  .form-input-field--big {
-    background-color: $alabaster;
-    min-height: 2.25rem;
-    resize: none;
-    height: 6.25rem;
+  @include tablet {
+    // margin-right: $padding-between-components-tablet;
     width: 100%;
-    padding: 0.75rem;
-    border-radius: 4px;
-    border: 2px solid $mercury;
-    @include root-font;
-    font-size: 0.95rem;
-
-    @include tablet {
-      padding: 0.75rem 0 0 0.75rem;
-      min-height: 2.5rem;
-      min-width: 15rem;
-      height: 2.6rem;
-    }
-
-    &::placeholder {
-      color: $brainFlix-black;
-    }
-
-    &:hover {
-      border-color: $brainFlix-blue;
-    }
-    &:invalid {
-      border-color: $error;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
+  @include desktop {
+    margin-right: $padding-between-components-tablet;
+  }
+}
+.form-input-field--big {
+  background-color: $alabaster;
+  min-height: 2.25rem;
+  resize: none;
+  height: 6.25rem;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 2px solid $mercury;
+  @include root-font;
+  font-size: 0.95rem;
+
+  @include tablet {
+    padding: 0.75rem 0 0 0.75rem;
+    min-height: 2.5rem;
+    min-width: 15rem;
+    height: 2.6rem;
+  }
+
+  &::placeholder {
+    color: $brainFlix-black;
+  }
+
+  &:hover {
+    border-color: $brainFlix-blue;
+  }
+  &:invalid {
+    border-color: $error;
+  }
+}
