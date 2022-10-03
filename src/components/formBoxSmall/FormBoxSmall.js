@@ -7,6 +7,7 @@ function FormBoxSmall(props) {
       type="text"
       name="comment"
       placeholder={props.placeholder}
+      id={props.id}
     ></input>
   );
 }
