@@ -1,6 +1,7 @@
 @use "../../styles/partials/colors.scss" as *;
 @use "../../styles/partials/fonts.scss" as *;
 @use "../../styles/partials/layout.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
 
 .videoThumbnail {
   max-width: 25rem;

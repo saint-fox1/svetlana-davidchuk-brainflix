@@ -6,11 +6,25 @@ import CommentBoxBig from "../../components/formBoxBig/FormBoxBig.js";
 import CommentBoxSmall from "../../components/formBoxSmall/FormBoxSmall.js";
 import Button from "../../components/button/Button.js";
 import publishIcon from "../../assets/Icons/publish.svg";
+import axios from "axios";
 
 function UploadVideoPage() {
   const onSubmit = () => {
-    alert("Upload is successful");
-    window.location.href = "/";
+    axios
+      .post("http://localhost:8080/videos/", {
+        title: document.getElementById("videoTitleInput").value,
+        description: document.getElementById("videoDescriptionInput").value,
+        image: "http://localhost:8080/images/thumbnail.jpg",
+        channel: "Svetlana's Channel",
+        duration: "4:00",
+        video: "https://project-2-api.herokuapp.com/stream",
+      })
+      .then((response) => {
+        alert("Upload is successful");
+      })
+      .catch((e) => {
+        console.error("The error:", e);
+      });
   };
 
   return (
@@ -26,9 +40,15 @@ function UploadVideoPage() {
           className="upload-video__form-wrapper"
         >
           <SubTitle subTitle="TITLE YOUR VIDEO" />
-          <CommentBoxSmall placeholder="Add a title to your video" />
+          <CommentBoxSmall
+            placeholder="Add a title to your video"
+            id="videoTitleInput"
+          />
           <SubTitle subTitle="ADD A VIDEO DESCRIPTION" />
-          <CommentBoxBig placeholder="Add a description to your video" />
+          <CommentBoxBig
+            placeholder="Add a description to your video"
+            id="videoDescriptionInput"
+          />
         </form>
       </div>
       <div className="upload-video__button-wrapper">

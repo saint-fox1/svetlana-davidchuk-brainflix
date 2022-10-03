@@ -1,14 +1,14 @@
 @use "../../styles/partials/colors.scss" as *;
 @use "../../styles/partials/fonts.scss" as *;
 @use "../../styles/partials/layout.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
 
 .text-area {
   @include tablet {
-    // margin-right: $padding-between-components-tablet;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: centfleer;
   }
   @include desktop {
     margin-right: $padding-between-components-tablet;
@@ -20,14 +20,14 @@
   min-height: 2.25rem;
   resize: none;
   width: 100%;
-  padding: 0.75rem;
+  padding: 0.75rem 0.75rem 0.5rem;
   border-radius: 4px;
   border: 2px solid $mercury;
   @include root-font;
   font-size: 0.95rem;
 
   @include tablet {
-    padding: 1rem;
+    padding: 0.25rem 1rem 0;
     min-height: 2.5rem;
     min-width: 15rem;
     height: 2.6rem;

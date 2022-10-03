@@ -9,27 +9,16 @@ class VideoPlayerPage extends React.Component {
     super(props);
     this.state = {
       currentVideo: null,
-      apiKey: null,
       videos: null,
     };
   }
-
   componentDidMount() {
     axios
-      .get("https://project-2-api.herokuapp.com/register")
+      .get("http://localhost:8080/videos/")
       .then((response) => {
-        this.setState({ apiKey: response.data["api_key"] });
-        axios
-          .get(
-            "https://project-2-api.herokuapp.com/videos?api_key=" +
-              this.state.apiKey
-          )
-          .then((response) => {
-            this.setState({ videos: response.data });
-          })
-          .catch((e) => {
-            console.error("The error:", e);
-          });
+        const data = response.data;
+        this.setState({ videos: data });
+        window.scrollTo(0, 0);
       })
       .catch((e) => {
         console.error("The error:", e);
@@ -39,21 +28,14 @@ class VideoPlayerPage extends React.Component {
   componentDidUpdate(prevProps) {
     const shouldGetVideo =
       this.state.videos !== null && this.state.currentVideo === null;
-
     if (shouldGetVideo || prevProps.match !== this.props.match) {
       const currentVideoId =
         this.props.match.params.videoId || this.state.videos[0].id;
 
       axios
-        .get(
-          "https://project-2-api.herokuapp.com/videos/" +
-            currentVideoId +
-            "?api_key=" +
-            this.state.apiKey
-        )
+        .get("http://localhost:8080/videos/" + currentVideoId)
         .then((response) => {
           const data = response.data;
-          data.video = data.video + "?api_key=" + this.state.apiKey;
           this.setState({ currentVideo: data });
           window.scrollTo(0, 0);
         })
@@ -63,7 +45,7 @@ class VideoPlayerPage extends React.Component {
     }
   }
 
-  render(props) {
+  render() {
     if (this.state.currentVideo === null) {
       return null;
     }
